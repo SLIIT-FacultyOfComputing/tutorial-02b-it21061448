@@ -21,14 +21,24 @@ cout<<"enter employee type:";
 cin>>etype;
 cout<<"enter salary:";
 cin>>salary;
-cout<<"enter OtHrs:":
-cin<<otHrs;
+cout<<"enter OtHrs:";
+cin>>otHrs;
 
-switch(etype)
+switch(etype){
 case 1:
   otRate=1000;
   break;
 case 2:
+  otRate=1500;
+  break;
+default:
+  otRate=1700;
+  break;
+}
+netSalary=salary+otHrs*otRate;
+cout<<"net salary is:"<<netSalary<<endl;
+
+
   
    return 0;
 }
